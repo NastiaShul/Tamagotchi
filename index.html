@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tamagotchi Game</title>
+</head>
+
+<body>
+	<div class="wrapper js-wrapper">
+		<header class="header">
+			<div class="header__logo">
+				<img src="./img/tamagotchi.svg" alt="tamagotchi">
+			</div>
+			<div class="header__tittle">
+				<h1>Tamagotchi Game</h1>
+			</div>
+		</header>
+		<main class="game">
+			<div class="game__hero-block">
+				<div class="game__hero js-hero">
+					<img src="./img/pet.svg" alt="hero">
+				</div>
+				<div class="hero-name js-hero-name"></div>
+			</div>
+
+			<div class="game-block">
+				<div>
+					<ul class="static">
+						<li class="statics-item">
+							<div class="statics-item__block">
+								<img src="./img/feed.svg" alt="feed">
+								<span class="statics-item__value">Well-fed:</span>
+							</div>
+							<div class="statics-item__rate js-rate" id="fed">100%</div>
+						</li>
+
+						<li class="statics-item">
+							<div class="statics-item__block">
+								<img src="./img/play.svg" alt="play">
+								<span class="statics-item__value">Played enough:</span>
+							</div>
+							<div class="statics-item__rate js-rate" id="played">100%</div>
+						</li>
+
+						<li class="statics-item">
+							<div class="statics-item__block">
+								<img src="./img/walk.svg" alt="walk">
+								<span class="statics-item__value">Walked up:</span>
+							</div>
+							<div class="statics-item__rate js-rate" id="walked">100%</div>
+						</li>
+
+						<li class="statics-item">
+							<div class="statics-item__block">
+								<img src="./img/bath.svg" alt="bath">
+								<span class="statics-item__value">Bathed:</span>
+							</div>
+							<div class="statics-item__rate js-rate" id="bathed">100%</div>
+						</li>
+
+						<li class="statics-item">
+							<div class="statics-item__block">
+								<img src="./img/sleep.svg" alt="sleep">
+								<span class="statics-item__value">Slept well:</span>
+							</div>
+							<div class="statics-item__rate js-rate" id="slept">100%</div>
+						</li>
+					</ul>
+				</div>
+				<div class="actions">
+					<div class="actions__item">
+						<button id="btn-feed" tabindex="1">Feed</button>
+					</div>
+					<div class="actions__item">
+						<button id="btn-play" tabindex="2">Play</button>
+					</div>
+					<div class="actions__item">
+						<button id="btn-walk" tabindex="3">Walk</button>
+					</div>
+					<div class="actions__item">
+						<button id="btn-bathe" tabindex="4">Bathe</button>
+					</div>
+					<div class="actions__item">
+						<button id="btn-sleep" tabindex="5">Sleep</button>
+					</div>
+				</div>
+			</div>
+
+		</main>
+	</div>
+	<div class="modal modal-start js-modal-start">
+		<h2>start game</h2>
+		<form action="">
+			<input type="text" name="name" maxlength="8" placeholder="What's name?">
+			<button type="submit" class="js-btn-go">go</button>
+		</form>
+	</div>
+	<div class="modal modal-over hide js-modal-over">
+		<h2>game over</h2>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
